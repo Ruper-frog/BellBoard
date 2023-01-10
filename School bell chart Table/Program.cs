@@ -66,45 +66,41 @@ namespace BellBoard
                         Play = true;
                         break;
 
-                    case "13:40 PM":
+                    case "1:40 PM":
                         Play = true;
                         break;
 
-                    case "13:55 PM":
+                    case "1:55 PM":
                         Play = true;
                         break;
 
-                    case "14:40 PM":
+                    case "2:40 PM":
                         Play = true;
                         break;
 
-                    case "15:25 PM":
+                    case "3:25 PM":
                         Play = true;
                         break;
 
-                    case "15:35 PM":
+                    case "3:35 PM":
                         Play = true;
                         break;
 
-                    case "16:20 PM":
+                    case "4:20 PM":
                         Play = true;
                         break;
 
-                    case "17:05 PM":
+                    case "5:05 PM":
                         Play = true;
                         break;
 
-                    case "17:50 PM":
+                    case "5:50 PM":
                         Play = true;
                         break;
 
-                    case "18:35 PM":
+                    case "6:35 PM":
                         Play = true;
                         break;
-                    case "7:23 PM":
-                        Play = true;
-                        break;
-
                 }
                 if (Play)
                 {
