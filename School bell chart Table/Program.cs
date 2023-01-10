@@ -11,7 +11,7 @@ namespace BellBoard
             SoundPlayer Shkira = new SoundPlayer(soundLocation: @"C:\Users\USER\source\repos\Visual Studio\Visual Studio Documents\Audio\Shakira Waka Waka.wav");
             Shkira.Play();
         }
-        public static string checkTime()
+        static string checkTime()
         {
             //input time as: hh:mm
             return DateTime.Now.ToShortTimeString();
