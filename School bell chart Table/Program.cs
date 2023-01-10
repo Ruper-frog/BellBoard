@@ -14,11 +14,7 @@ namespace BellBoard
         public static string checkTime()
         {
             //input time as: hh:mm
-            string time = DateTime.Now.ToShortTimeString();
-
-            Console.WriteLine(time);
-
-            return time;
+            return DateTime.Now.ToShortTimeString();
         }
         static void Main(string[] args)
         {
