@@ -5,7 +5,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace School_bell_chart_Table
+namespace BellBoard
 {
     internal class Program
     {
