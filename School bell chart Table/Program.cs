@@ -18,90 +18,34 @@ namespace BellBoard
         }
         static void Main(string[] args)
         {
-            bool Play;
+            int Count = 0;
 
             while (true)
             {
-                Play = false;
+                string Time = checkTime();
 
-                switch (checkTime())
+                if (Time.Length > 5)
                 {
-                    case "7:45 AM":
-                        Play = true;
-                        break;
+                    if (Time == "7:45 AM" || Time == "8:30 AM" || Time == "9:15 AM" || Time == "10:00 AM" || Time == "10:15 AM" || Time == "11:00 AM" || Time == "11:45 AM" || Time == "12:10 PM" || Time == "12:55 PM" || Time == "13:40 PM" || Time == "13:55 PM" || Time == "14:40 PM" || Time == "15:25 PM" || Time == "15:35 PM" || Time == "16:20 PM" || Time == "17:05 PM" || Time == "17:50 PM" || Time == "18:35 PM")
+                    {
+                        Count++;
 
-                    case "8:30 AM":
-                        Play = true;
-                        break;
-
-                    case "9:15 AM":
-                        Play = true;
-                        break;
-
-                    case "10:00 AM":
-                        Play = true;
-                        break;
-
-                    case "10:15 AM":
-                        Play = true;
-                        break;
-
-                    case "11:00 AM":
-                        Play = true;
-                        break;
-
-                    case "11:45 AM":
-                        Play = true;
-                        break;
-
-                    case "12:10 PM":
-                        Play = true;
-                        break;
-
-                    case "12:55 PM":
-                        Play = true;
-                        break;
-
-                    case "1:40 PM":
-                        Play = true;
-                        break;
-
-                    case "1:55 PM":
-                        Play = true;
-                        break;
-
-                    case "2:40 PM":
-                        Play = true;
-                        break;
-
-                    case "3:25 PM":
-                        Play = true;
-                        break;
-
-                    case "3:35 PM":
-                        Play = true;
-                        break;
-
-                    case "4:20 PM":
-                        Play = true;
-                        break;
-
-                    case "5:05 PM":
-                        Play = true;
-                        break;
-
-                    case "5:50 PM":
-                        Play = true;
-                        break;
-
-                    case "6:35 PM":
-                        Play = true;
-                        break;
+                        if (Count == 1)
+                        {
+                            BoomBox();
+                            Thread.Sleep(48000);
+                        }
+                    }
                 }
-                if (Play)
+                else if (Time == "07:45" || Time == "08:30" || Time == "09:15" || Time == "10:00" || Time == "10:15" || Time == "11:00" || Time == "11:45" || Time == "12:10" || Time == "12:55" || Time == "13:40" || Time == "13:55" || Time == "14:40" || Time == "15:25" || Time == "15:35" || Time == "16:20" || Time == "17:05" || Time == "17:50" || Time == "18:35")
                 {
-                    BoomBox();
-                    Thread.Sleep(48000);
+                    Count++;
+
+                    if (Count == 1)
+                    {
+                        BoomBox();
+                        Thread.Sleep(48000);
+                    }
                 }
             }
         }
