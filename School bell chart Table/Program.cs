@@ -24,7 +24,7 @@ namespace BellBoard
 
                 if (Time.Length > 5)
                 {
-                    if (Time == "7:45 AM" || Time == "8:30 AM" || Time == "9:15 AM" || Time == "10:00 AM" || Time == "10:15 AM" || Time == "11:00 AM" || Time == "11:45 AM" || Time == "12:10 PM" || Time == "12:55 PM" || Time == "13:40 PM" || Time == "13:55 PM" || Time == "14:40 PM" || Time == "15:25 PM" || Time == "15:35 PM" || Time == "16:20 PM" || Time == "17:05 PM" || Time == "17:50 PM" || Time == "18:35 PM")
+                    if (Time == "7:45 AM" || Time == "8:30 AM" || Time == "9:15 AM" || Time == "10:00 AM" || Time == "10:15 AM" || Time == "11:00 AM" || Time == "11:45 AM" || Time == "12:10 PM" || Time == "12:55 PM" || Time == "1:40 PM" || Time == "1:55 PM" || Time == "2:40 PM" || Time == "3:25 PM" || Time == "3:35 PM" || Time == "4:20 PM" || Time == "5:05 PM" || Time == "5:50 PM" || Time == "6:35 PM")
                     {
                         Thread.Sleep(13000);
 
